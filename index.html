@@ -15,6 +15,63 @@
     <title>Task List</title>
   </head>
   <body>
+    <div class="container">
+      <div class="row">
+        <div class="col s12 center-align">
+          <div class="card-create-task card lime lighten-4">
+            <div class="card-content">
+              <span class="card-title">Create a task</span>
+              <div class="row">
+                <form class="form-create-task">
+                  <div class="input-field col s12">
+                    <input
+                      class="form-create-task__input"
+                      id="new-task"
+                      type="text"
+                      class="validate"
+                    />
+                    <label for="new-task">New Task</label>
+                  </div>
+                  <button
+                    class="form-create-task__button btn waves-effect lime darken-4"
+                    type="submit"
+                    name="action"
+                  >
+                    Add Task
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="cart-list card">
+            <div class="card-content">
+              <span class="card-title">Tasks list</span>
+              <div class="row">
+                <form class="form-filter">
+                  <div class="input-field col s12">
+                    <input
+                      class="form-filter__input"
+                      id="filter-tasks"
+                      type="text"
+                      class="validate"
+                    />
+                    <label for="filter-tasks">Filter Tasks</label>
+                  </div>
+                </form>
+                <ul class="card-list__collection"></ul>
+                <button
+                  class="card-list__button btn waves-effect lime darken-4"
+                  name="action"
+                >
+                  Clear all Tasks
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <script
       src="https://code.jquery.com/jquery-3.6.1.js"
       integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
